@@ -219,6 +219,17 @@ BOARD_USES_QCOM_HARDWARE := true
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 
+#QTI
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
+# Recovery
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+LZMA_RAMDISK_TARGETS := recovery
+>>>>>>> 76079af... potter: use proprietary qti-telephony-common
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/fstab.qcom
 
