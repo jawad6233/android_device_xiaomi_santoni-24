@@ -91,6 +91,9 @@ ro.qualcomm.svi=0
 ro.sf.lcd_density=320
 sys.display-size=3840x2160
 
+# Maintainer
+ro.aosp.maintainer=Sonal Singh
+
 # DRM
 drm.service.enabled=true
 
