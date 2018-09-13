@@ -1,1 +1,1 @@
-add_lunch_combo arrow_santoni-userdebug
+add_lunch_combo havoc_santoni-userdebug
