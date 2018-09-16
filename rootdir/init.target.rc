@@ -242,7 +242,6 @@ on charger
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
     start hvdcp_opti
-    start thermal-engine
 
 service getcolorid /system/bin/getcolorid
     class core
