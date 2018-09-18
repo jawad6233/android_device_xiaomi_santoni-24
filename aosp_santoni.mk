@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The ArrowOS Project
+# Copyight (C) 2017 The PixelExperienceOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +16,25 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common PixelExperienceOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := arrow_santoni
+PRODUCT_MODEL := Redmi 4
+PRODUCT_NAME := aosp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Include Bootanimation configuration
+TARGET_GAPPS_ARCH := arm64
+GAPPS_VARIANT := micro
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_ARCORE := true
+
+# Extra Essential Gapps
+GAPPS_PRODUCT_PACKAGES += \
+    YouTube
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -32,3 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="santoni-user 7.1.2 N2G47H V9.5.10.0.NAMMIFD release-keys"
 
 BUILD_FINGERPRINT := "Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys"
+
+#gapps
+-include vendor/gapps/config.mk
