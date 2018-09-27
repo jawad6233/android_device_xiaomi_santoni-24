@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_santoni.mk
+    $(LOCAL_DIR)/lite_santoni.mk
