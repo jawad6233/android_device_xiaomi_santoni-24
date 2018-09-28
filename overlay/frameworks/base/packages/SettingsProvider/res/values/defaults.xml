@@ -19,4 +19,7 @@
 <resources>
     <!-- Disable bluetooth by default -->
     <bool name="def_bluetooth_on">false</bool>
+    
+    <!-- Default screen brightness, from 0 to 255. 82 is 32%. -->
+    <integer name="def_screen_brightness">102</integer>
 </resources>
