@@ -1,3 +1,6 @@
+# AoD
+persist.debug.force_burn_in=true
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=1 \
